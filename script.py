@@ -50,40 +50,6 @@
 # txt = "lorem ipsum dolor sit amet"
 
 # print(c.hump(txt))
-
-# from selenium import webdriver
-# from selenium.webdriver.common.by import By
-
-
-# def test_eight_components():
-#     driver = webdriver.Chrome()
-
-#     driver.get("https://www.selenium.dev/selenium/web/web-form.html")
-
-#     title = driver.title
-#     assert title == "Web form"
-
-#     driver.implicitly_wait(0.5)
-
-#     text_box = driver.find_element(by=By.NAME, value="my-text")
-#     submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
-    
-#     text_box = driver.find_element(by=By.NAME, value="my-password")
-    
-#     submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button")
-
-
-#     text_box.send_keys("Selenium")
-#     submit_button.click()
-
-#     message = driver.find_element(by=By.ID, value="message")
-#     value = message.text
-#     assert value == "Received!"
-    
-
-#     driver.quit()
-# test_eight_components()
-
 # from selenium import webdriver
 
 
@@ -94,8 +60,38 @@
 # driver.quit()
  
  
-a = """Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""    
-print(a)
+# a = """Lorem ipsum dolor sit amet,
+# consectetur adipiscing elit,
+# sed do eiusmod tempor incididunt
+# ut labore et dolore magna aliqua."""    
+# print(a)
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time 
+
+
+def test_eight_components():
+    # 
+    driver = webdriver.Chrome()
+    driver.get("http://127.0.0.1:5500/index.html")
+    driver.implicitly_wait(0.5)
+    driver.maximize_window()
+    print("window maximize done")
+    
+    # find web element
+    # title
+    title = driver.title
+    assert title == "Namari - Free Landing Page Template"
+    print (driver.title)
+    
+    image = driver.find_element(By.ID, value="banner-logo")
+    text = driver.find_element(By.ID, value="my-text")
+    print(image)
+    text.send_keys("hello")
+    time.sleep(100)
+    
+    driver.quit()
+test_eight_components()
+
