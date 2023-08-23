@@ -1,63 +1,63 @@
-# my_name = "Temuulen"
-# print("Hello and welcome " + my_name + "!")
-# gg = input("what is your name?")
-# print("hello" + gg)
-# birth_year = input("Enter your birth year:")
-# age = 2023 - int(birth_year)
-# # print("birth_year", age)
-# course = "Python for beginners"
-# print(course.replace("g", "5"))
-# temprature = 25
-# if temprature >= 30:
-#     print("hot temprature")
-#     print("Drink plenty of water")
-# elif temprature > 20:
-#     print("it's a nice day")
-# else:
-# print("cold temprature")
-# i =1
-# while i <= 20:
-#     print(i * "*" )
-#     i+=1
-# numbers = [1, 2, 3, 4, 5]
+my_name = "Temuulen"
+print("Hello and welcome " + my_name + "!")
+gg = input("what is your name?")
+print("hello" + gg)
+birth_year = input("Enter your birth year:")
+age = 2023 - int(birth_year)
+# print("birth_year", age)
+course = "Python for beginners"
+print(course.replace("g", "5"))
+temprature = 25
+if temprature >= 30:
+    print("hot temprature")
+    print("Drink plenty of water")
+elif temprature > 20:
+    print("it's a nice day")
+else:
+ print("cold temprature")
+i =1
+while i <= 20:
+    print(i * "*" )
+    i+=1
+numbers = [1, 2, 3, 4, 5]
 
-# for item in numbers:
-#     print(item)
+for item in numbers:
+    print(item)
 
-# i = 0
-# while i < len(numbers):
-#     print(numbers[i])
-#     i += 1
-
-
-# def func():
-#     print("gg")
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i += 1
 
 
-# func()
+def func():
+    print("gg")
 
-# x = None
-# print(x)
 
-# import random
+func()
 
-# print(random.randrange(0, 10))
+x = None
+print(x)
 
-# import camelcase
+import random
 
-# c = camelcase.CamelCase()
+print(random.randrange(0, 10))
 
-# txt = "lorem ipsum dolor sit amet"
+import camelcase
+
+c = camelcase.CamelCase()
+
+txt = "lorem ipsum dolor sit amet"
 
 # print(c.hump(txt))
 # from selenium import webdriver
 
 
-# driver = webdriver.Chrome()
+driver = webdriver.Chrome()
 
-# driver.get("http://youtube.com")
+driver.get("http://youtube.com")
 
-# driver.quit()
+driver.quit()
  
  
 # a = """Lorem ipsum dolor sit amet,
@@ -73,7 +73,7 @@ import time
 
 
 def test_eight_components():
-    # 
+    # namari test
     driver = webdriver.Chrome()
     driver.get("http://127.0.0.1:5500/index.html")
     driver.implicitly_wait(0.5)
